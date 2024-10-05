@@ -1,13 +1,14 @@
 *** Settings ***
-Library     SeleniumLibrary
 Library     String
-
+Library     SeleniumLibrary
 
 Variables    ../resources/testdata/testdata.yaml
 Variables    ../resources/setting/${env}/setting.yaml
+Variables    ../resources/setting/configGlobal.yaml
 
 
-Resource     common.robot
+
+Resource     ./common.robot
 
 
 

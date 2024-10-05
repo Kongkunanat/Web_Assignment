@@ -5,25 +5,27 @@ Resource    ../import.robot
 *** Keywords ***
 Fill Delivery info field
 
-
-    Wait Until Page Contains Element  ${delivery_locator.Icon_cart}     10s
-    Click Element    ${delivery_locator.Icon_cart} 
+    [Arguments]    ${name}   ${surname}    ${address}    ${telephone} 
 
 
-    Wait Until Element Is Visible     ${delivery_locator.load_data}       30s
-    Input Text    ${delivery_locator.name}   ${TC002.name} 
+    SeleniumLibrary.Wait Until Page Contains Element  ${delivery_locator.Icon_cart}     ${GLOBAL_TIMOUT}
+    SeleniumLibrary.Click Element    ${delivery_locator.Icon_cart} 
 
-    Wait Until Element Is Visible      ${delivery_locator.surname}   15s
-    Input Text    ${delivery_locator.surname}   ${TC002.surname}
 
-    Wait Until Element Is Visible    ${delivery_locator.address}     10s
-    Input Text   ${delivery_locator.address}    ${TC002.address} 
+    SeleniumLibrary.Wait Until Element Is Visible     ${delivery_locator.load_data}       ${GLOBAL_TIMOUT}
+    SeleniumLibrary.Input Text    ${delivery_locator.name}   ${name} 
 
-    Wait Until Element Is Visible    ${delivery_locator.phone}     10s
-    Input Text    ${delivery_locator.phone}    ${TC002.telephone}
+    SeleniumLibrary.Wait Until Element Is Visible      ${delivery_locator.surname}   ${GLOBAL_TIMOUT}
+    SeleniumLibrary.Input Text    ${delivery_locator.surname}   ${surname}
 
-    Wait Until Page Contains Element    ${delivery_locator.pay_button}      10s
-    Click Element    ${delivery_locator.pay_button}  
+    SeleniumLibrary.Wait Until Element Is Visible    ${delivery_locator.address}     ${GLOBAL_TIMOUT}
+    SeleniumLibrary.Input Text   ${delivery_locator.address}    ${address} 
+
+    SeleniumLibrary.Wait Until Element Is Visible    ${delivery_locator.phone}     ${GLOBAL_TIMOUT}
+    SeleniumLibrary.Input Text    ${delivery_locator.phone}    ${telephone}
+
+    SeleniumLibrary.Wait Until Page Contains Element    ${delivery_locator.pay_button}      ${GLOBAL_TIMOUT}
+    SeleniumLibrary.Click Element    ${delivery_locator.pay_button}  
 
 
 

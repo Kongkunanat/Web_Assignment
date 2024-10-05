@@ -1,14 +1,16 @@
 ***Settings***
 Resource    ../keywords/import.robot
 
-# Test Teardown       Clear all browser
+
+Test Setup    Common.Open Doppio Browser
+Test Teardown       Common.Close all browser
 
 
 ***Test Cases***
 TC-001  
     common.Open Doppio Browser
-    home_feature.Sign up
-    register_page.Input Data For Sign Up    ${TC001.email_register}        ${TC001.password_register}        ${TC001.password_register} 
+    home_feature.Click For Sign up
+    register_page.Input Data For Sign Up    ${email_password.email_register}        ${email_password.password_register}        ${email_password.password_register} 
     home_page.Click Icon For Register Or Login
     account_page.Logout 
 
@@ -16,12 +18,12 @@ TC-001
 TC-002
     common.Open Doppio Browser
     home_page.Click Icon For Register Or Login
-    login_page.Login with the registered account   ${TC002.email_register}     ${TC002.password_register}   
-    home_feature.Select and add product into cart
+    login_page.Login with the registered account   ${email_password.email_register}     ${email_password.password_register}   
+    home_feature.Select and add product into cart    ${search_product.type}  
     product_detail_page.Increase or Reduce Product
-    delivery_info_page.Fill Delivery info field
+    delivery_info_page.Fill Delivery info field    ${profile.name}   ${profile.surname}    ${profile.address}    ${profile.telephone} 
     payment_select_page.Select Payment Method
-    payment_credit_page.Purchase the product with credit card     ${TC002.card_number}    ${TC002.EXP}    ${TC002.CVC}    ${TC002.CardOwner}  
+    payment_credit_page.Purchase the product with credit card     ${credit_card.card_number}    ${credit_card.EXP}    ${credit_card.CVC}    ${credit_card.CardOwner}  
     home_page.Click Icon For Register Or Login
     account_page.The order should be created checked
 

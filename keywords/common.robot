@@ -1,10 +1,10 @@
 *** Settings ***
-
 Resource    ./import.robot
+
 *** Keywords ***
 Open Doppio Browser
-    open Browser    ${url}      gc
+    SeleniumLibrary.Open Browser    ${url}      gc
 
 
-Clear all browser
-    Close All Browsers
+Close all browser
+    SeleniumLibrary.Close All Browsers
