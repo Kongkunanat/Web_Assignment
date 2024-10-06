@@ -8,9 +8,10 @@ Click For Sign up
     home_page.Click Button Sign Up
 
 
-Select and add product into cart
+Select Product
     [Arguments]    ${type_product}   
-    home_page.Search Product By Keyword    ${type_product}  
+    home_page.Input Keyword For Search       ${search_product.type}  
+    home_page.Button Search
     home_page.Add Product Into Cart
 
 

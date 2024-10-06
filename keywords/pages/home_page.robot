@@ -8,12 +8,14 @@ Click Icon For Register Or Login
     SeleniumLibrary.Click Element    ${home_locator.Icon_for_register_or_login} 
 
 
-Search Product By Keyword
 
+Input Keyword For Search
     [Arguments]    ${type_product}   
     SeleniumLibrary.Wait Until Element Is Visible      ${home_locator.input_text}  ${GLOBAL_TIMOUT}
     SeleniumLibrary.Input Text    ${home_locator.input_text}     ${type_product} 
 
+
+Button Search
     SeleniumLibrary.Wait Until Page Contains Element  ${home_locator.element_serch}    ${GLOBAL_TIMOUT}
     SeleniumLibrary.Click Element    ${home_locator.element_serch}
 

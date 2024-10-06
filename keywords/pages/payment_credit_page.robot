@@ -4,7 +4,7 @@ Resource    ../import.robot
 
 *** Keywords ***
 
-Purchase the product with credit card
+Input credit card
     [Arguments]    ${CardNumber}   ${EXP}    ${CVC}    ${CardOwner} 
     SeleniumLibrary.Wait Until Page Contains Element     ${payment_credit_locator.input_number}      ${GLOBAL_TIMOUT}
     ${CardNumberNoSpace}=    Remove String    ${CardNumber}    ${SPACE}
@@ -21,10 +21,12 @@ Purchase the product with credit card
     SeleniumLibrary.Input Text      ${payment_credit_locator.input_basic_owner}      ${CardOwner}
 
 
+Button Confirm
     SeleniumLibrary.Wait Until Page Contains Element     ${payment_credit_locator.confirm_button}  ${GLOBAL_TIMOUT}
     SeleniumLibrary.Click Element    ${payment_credit_locator.confirm_button} 
 
 
+Button Ok
     SeleniumLibrary.Wait Until Element Is Visible      ${payment_credit_locator.button_ok}      ${GLOBAL_TIMOUT}
     SeleniumLibrary.Click Element    ${payment_credit_locator.button_ok}   
 

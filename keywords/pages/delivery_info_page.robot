@@ -3,7 +3,7 @@ Resource    ../import.robot
 
 
 *** Keywords ***
-Fill Delivery info field
+Input Fill Delivery info field
 
     [Arguments]    ${name}   ${surname}    ${address}    ${telephone} 
 
@@ -24,6 +24,8 @@ Fill Delivery info field
     SeleniumLibrary.Wait Until Element Is Visible    ${delivery_locator.phone}     ${GLOBAL_TIMOUT}
     SeleniumLibrary.Input Text    ${delivery_locator.phone}    ${telephone}
 
+
+Button Pay
     SeleniumLibrary.Wait Until Page Contains Element    ${delivery_locator.pay_button}      ${GLOBAL_TIMOUT}
     SeleniumLibrary.Click Element    ${delivery_locator.pay_button}  
 

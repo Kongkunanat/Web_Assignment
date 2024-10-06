@@ -55,4 +55,9 @@ Resource    ./locators/register_locator.robot
 
 
 Resource    ./features/home_feature.robot
-
+Resource    ./features/register_feature.robot
+Resource    ./features/login_feature.robot
+Resource    ./features/payment_select_feature.robot
+Resource    ./features/payment_credit_feature.robot
+Resource    ./features/product_detail_feature.robot
+Resource    ./features/delivery_info_feature.robot
