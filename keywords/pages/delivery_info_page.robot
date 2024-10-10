@@ -4,9 +4,7 @@ Resource    ../import.robot
 
 *** Keywords ***
 Input Fill Delivery info field
-
     [Arguments]    ${name}   ${surname}    ${address}    ${telephone} 
-
 
     SeleniumLibrary.Wait Until Page Contains Element  ${delivery_locator.Icon_cart}     ${GLOBAL_TIMOUT}
     SeleniumLibrary.Click Element    ${delivery_locator.Icon_cart} 

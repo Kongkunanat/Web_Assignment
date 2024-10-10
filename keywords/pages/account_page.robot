@@ -11,11 +11,6 @@ The order should be created checked
     
     
 
-Logout    
-    SeleniumLibrary.Wait Until Element Is Enabled    ${account_locator.button_logout} 
-    SeleniumLibrary.Click Button     ${account_locator.button_logout} 
-
-
 
 
 

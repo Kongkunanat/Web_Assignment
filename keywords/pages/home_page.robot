@@ -16,8 +16,8 @@ Input Keyword For Search
 
 
 Button Search
-    SeleniumLibrary.Wait Until Page Contains Element  ${home_locator.element_serch}    ${GLOBAL_TIMOUT}
-    SeleniumLibrary.Click Element    ${home_locator.element_serch}
+    SeleniumLibrary.Wait Until Page Contains Element  ${home_locator.element_search}    ${GLOBAL_TIMOUT}
+    SeleniumLibrary.Click Element    ${home_locator.element_search}
 
 
 

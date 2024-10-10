@@ -13,8 +13,10 @@ ${payment_credit_locator.confirm_button}        xpath=//button[@type='submit']//
 
 
 
-#button ok
-${payment_credit_locator.button_ok}        xpath=//div[@class="ant-modal-confirm-body-wrapper"]//span[text()='OK']
+
+
+
+
 
 
 

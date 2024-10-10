@@ -4,16 +4,9 @@ Resource    ../import.robot
 
 *** Keywords ***
 
-Increase or Reduce Product
-    SeleniumLibrary.Wait Until Page Contains Element    ${product_datail_locator.increase_or_reduce}     ${GLOBAL_TIMOUT}
-    SeleniumLibrary.Click Element    ${product_datail_locator.increase_or_reduce} 
-
-
-
-Button Ok
-    SeleniumLibrary.Wait Until Element Is Visible      ${product_datail_locator.Ok}      ${GLOBAL_TIMOUT}
-    SeleniumLibrary.Click Element    ${product_datail_locator.Ok} 
-
+Add To Cart
+    SeleniumLibrary.Wait Until Page Contains Element    ${product_datail_locator.button_add_to_cart}      ${GLOBAL_TIMOUT}
+    SeleniumLibrary.Click Element    ${product_datail_locator.button_add_to_cart} 
 
 
 

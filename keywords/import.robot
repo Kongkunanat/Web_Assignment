@@ -7,8 +7,8 @@ Variables    ../resources/setting/${env}/setting.yaml
 Variables    ../resources/setting/configGlobal.yaml
 
 
-
 Resource     ./common.robot
+Resource     ./locators/common_locator.robot
 
 
 

@@ -3,17 +3,13 @@
 ${home_locator.Icon_for_register_or_login}        xpath=//ul[@role='menu']//span[@aria-label="user"]
 
 
-
 #Input search bar
-${home_locator.input_text}           xpath=//input[@type='text']
-${home_locator.element_serch}        xpath=//span[@aria-label="search"]
-
+${home_locator.input_text}           xpath=//input[@placeholder='input search text']
+${home_locator.element_search}        xpath=//span[@aria-label="search"]
 
 
 #Add product into cart
 ${home_locator.select_product}            xpath=//div[@class="ant-col ant-col-md-8 ant-col-lg-6 ant-col-xl-4 ant-col-xxl-3 css-eq3tly"]
-
-
 
 
 #button signup

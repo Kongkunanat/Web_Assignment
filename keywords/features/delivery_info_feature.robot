@@ -1,7 +1,6 @@
 *** Settings ***
 Resource    ../import.robot
 
-
 *** Keywords ***
 Pay method
     [Arguments]    ${name}        ${surname}        ${address}     ${telephone} 
