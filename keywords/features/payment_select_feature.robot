@@ -3,6 +3,6 @@ Resource    ../import.robot
 
 
 *** Keywords ***
-Select Method
+Select Method For Payment
     payment_select_page.Select Payment Method
-    payment_select_page.Button Next
+    payment_select_page.Click Next Button 

@@ -1,507 +1,337 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1 (Python 3.12.6 on darwin)" generated="2024-10-09T16:59:12.776739" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1 (Python 3.12.6 on darwin)" generated="2024-10-15T17:02:28.573883" rpa="false" schemaversion="5">
 <suite id="s1" name="Test-Cases" source="/Users/khongkhunanat.p/Documents/GitHub/Web_Assignment/testcases/test-cases.robot">
-<test id="s1-t1" name="TC-001" line="11">
+<test id="s1-t1" name="TC-001 Verify is order should be created" line="11">
 <kw name="Open Doppio Browser" owner="common" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:12.865226" level="INFO">Opening browser 'gc' to base url 'https://training-platform.doppio-tech.com'.</msg>
+<msg time="2024-10-15T17:02:28.661281" level="INFO">Opening browser 'gc' to base url 'https://training-platform.doppio-tech.com'.</msg>
 <arg>${url}</arg>
 <arg>gc</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-10-09T16:59:12.865124" elapsed="1.767076"/>
+<status status="PASS" start="2024-10-15T17:02:28.661182" elapsed="1.762376"/>
 </kw>
-<status status="PASS" start="2024-10-09T16:59:12.864865" elapsed="1.767507"/>
+<status status="PASS" start="2024-10-15T17:02:28.660929" elapsed="1.762839"/>
 </kw>
 <kw name="Click For Sign up" owner="home_feature">
-<kw name="Click Icon For Register Or Login" owner="home_page">
+<kw name="Click Icon User" owner="home_page">
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${home_locator.Icon_for_register_or_login}</arg>
+<arg>${home_locator.user_icon}</arg>
 <arg>${GLOBAL_TIMOUT}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-10-09T16:59:14.633201" elapsed="0.005590"/>
+<status status="PASS" start="2024-10-15T17:02:30.424559" elapsed="0.006330"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:14.639010" level="INFO">Clicking element 'xpath=//ul[@role='menu']//span[@aria-label="user"]'.</msg>
-<arg>${home_locator.Icon_for_register_or_login}</arg>
+<msg time="2024-10-15T17:02:30.431167" level="INFO">Clicking element 'xpath=//ul[@role='menu']//span[@aria-label="user"]'.</msg>
+<arg>${home_locator.user_icon}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:14.638900" elapsed="0.043506"/>
+<status status="PASS" start="2024-10-15T17:02:30.431021" elapsed="0.043506"/>
 </kw>
-<status status="PASS" start="2024-10-09T16:59:14.633058" elapsed="0.049612"/>
+<status status="PASS" start="2024-10-15T17:02:30.424409" elapsed="0.050196"/>
 </kw>
 <kw name="Click Button Sign Up" owner="home_page">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${home_locator.button_signup}</arg>
 <arg>${GLOBAL_TIMOUT}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-10-09T16:59:14.683392" elapsed="0.017344"/>
+<status status="PASS" start="2024-10-15T17:02:30.474906" elapsed="0.014646"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:14.700962" level="INFO">Clicking button 'xpath=//button[@class="css-eq3tly ant-btn ant-btn-default button-login"]'.</msg>
+<msg time="2024-10-15T17:02:30.489773" level="INFO">Clicking button 'xpath=//button[@class="css-eq3tly ant-btn ant-btn-default button-login"]'.</msg>
 <arg>${home_locator.button_signup}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:14.700855" elapsed="0.044410"/>
+<status status="PASS" start="2024-10-15T17:02:30.489665" elapsed="0.044279"/>
 </kw>
-<status status="PASS" start="2024-10-09T16:59:14.683200" elapsed="0.062342"/>
+<status status="PASS" start="2024-10-15T17:02:30.474735" elapsed="0.059477"/>
 </kw>
-<status status="PASS" start="2024-10-09T16:59:14.632715" elapsed="0.112916"/>
+<status status="PASS" start="2024-10-15T17:02:30.424157" elapsed="0.110131"/>
 </kw>
 <kw name="Sign up" owner="register_feature">
 <kw name="Input Data For Sign Up" owner="register_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:14.747918" level="INFO">Typing text 'frequence92.p@doppiotech.com' into text field 'xpath=//input[@id="basic_username"]'.</msg>
+<msg time="2024-10-15T17:02:30.536855" level="INFO">Typing text 'frequence119.p@doppiotech.com' into text field 'xpath=//input[@id="basic_username"]'.</msg>
 <arg>${register_locator.email}</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:14.747818" elapsed="0.126523"/>
+<status status="PASS" start="2024-10-15T17:02:30.536710" elapsed="0.115292"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:14.874609" level="INFO">Typing text 'Kong1234*' into text field 'xpath=//input[@id="basic_password"]'.</msg>
+<msg time="2024-10-15T17:02:30.652253" level="INFO">Typing text 'Kong1234*' into text field 'xpath=//input[@id="basic_password"]'.</msg>
 <arg>${register_locator.password}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:14.874469" elapsed="0.047363"/>
+<status status="PASS" start="2024-10-15T17:02:30.652124" elapsed="0.041232"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:14.922137" level="INFO">Typing text 'Kong1234*' into text field 'xpath=//input[@id="basic_confirmPassword"]'.</msg>
+<msg time="2024-10-15T17:02:30.693645" level="INFO">Typing text 'Kong1234*' into text field 'xpath=//input[@id="basic_confirmPassword"]'.</msg>
 <arg>${register_locator.confirm_password}</arg>
 <arg>${password_confirm}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:14.921969" elapsed="0.038550"/>
+<status status="PASS" start="2024-10-15T17:02:30.693503" elapsed="0.038104"/>
 </kw>
 <arg>${email_register}</arg>
 <arg>${password_register}</arg>
 <arg>${password_register}</arg>
-<status status="PASS" start="2024-10-09T16:59:14.747660" elapsed="0.212924"/>
+<status status="PASS" start="2024-10-15T17:02:30.536466" elapsed="0.195214"/>
 </kw>
-<kw name="ฺButton Sign Up" owner="register_page">
+<kw name="ฺClick Sign Up Button" owner="register_page">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:14.960922" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
+<msg time="2024-10-15T17:02:30.732073" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
 <arg>${register_locator.button_signup}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:14.960830" elapsed="0.030941"/>
+<status status="PASS" start="2024-10-15T17:02:30.731971" elapsed="0.028253"/>
 </kw>
-<status status="PASS" start="2024-10-09T16:59:14.960698" elapsed="0.031141"/>
+<status status="PASS" start="2024-10-15T17:02:30.731818" elapsed="0.028480"/>
 </kw>
-<kw name="Button Ok" owner="register_page">
-<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
-<arg>${register_locator.button_Ok}</arg>
+<kw name="Confirm On Dialog" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${common_locator.button_ok}</arg>
 <arg>${GLOBAL_TIMOUT}</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-10-09T16:59:14.992106" elapsed="0.675593"/>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-15T17:02:30.760624" elapsed="0.219083"/>
 </kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:15.668076" level="INFO">Clicking button 'xpath=//button[@type="button"]'.</msg>
-<arg>${register_locator.button_Ok}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:15.667900" elapsed="0.025468"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-15T17:02:30.980009" level="INFO">Clicking element 'xpath=//span[text()='OK']'.</msg>
+<arg>${common_locator.button_ok}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-15T17:02:30.979861" elapsed="0.022452"/>
 </kw>
-<status status="PASS" start="2024-10-09T16:59:14.991962" elapsed="0.701473"/>
+<status status="PASS" start="2024-10-15T17:02:30.760426" elapsed="0.241949"/>
 </kw>
 <arg>${email_password.email_register}</arg>
 <arg>${email_password.password_register}</arg>
 <arg>${email_password.password_register}</arg>
-<status status="PASS" start="2024-10-09T16:59:14.745896" elapsed="0.947568"/>
+<status status="PASS" start="2024-10-15T17:02:30.534691" elapsed="0.467715"/>
 </kw>
 <kw name="Select Product" owner="home_feature">
 <kw name="Input Keyword For Search" owner="home_page">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-10-15T17:02:40.136638" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.91)
+Stacktrace:
+0   chromedriver                        0x0000000100fa4500 cxxbridge1$str$ptr + 1917112
+1   chromedriver                        0x0000000100f9c890 cxxbridge1$str$ptr + 1885256
+2   chromedriver                        0x0000000100bac538 cxxbridge1$string$len + 89424
+3   chromedriver                        0x0000000100b87980 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 3776
+4   chromedriver                        0x0000000100c17234 cxxbridge1$string$len + 526924
+5   chromedriver                        0x0000000100c2a5c4 cxxbridge1$string$len + 605660
+6   chromedriver                        0x0000000100be5374 cxxbridge1$string$len + 322444
+7   chromedriver                        0x0000000100be5fc4 cxxbridge1$string$len + 325596
+8   chromedriver                        0x0000000100f6bd2c cxxbridge1$str$ptr + 1685732
+9   chromedriver                        0x0000000100f70530 cxxbridge1$str$ptr + 1704168
+10  chromedriver                        0x0000000100f50e08 cxxbridge1$str$ptr + 1575360
+11  chromedriver                        0x0000000100f70e00 cxxbridge1$str$ptr + 1706424
+12  chromedriver                        0x0000000100f41f94 cxxbridge1$str$ptr + 1514316
+13  chromedriver                        0x0000000100f8d62c cxxbridge1$str$ptr + 1823204
+14  chromedriver                        0x0000000100f8d7ac cxxbridge1$str$ptr + 1823588
+15  chromedriver                        0x0000000100f9c530 cxxbridge1$str$ptr + 1884392
+16  libsystem_pthread.dylib             0x000000019418f2e4 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000019418a0fc thread_start + 8
+</msg>
+<msg time="2024-10-15T17:02:40.136853" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.91)
+Stacktrace:
+0   chromedriver                        0x0000000100fa4500 cxxbridge1$str$ptr + 1917112
+1   chromedriver                        0x0000000100f9c890 cxxbridge1$str$ptr + 1885256
+2   chromedriver                        0x0000000100bac538 cxxbridge1$string$len + 89424
+3   chromedriver                        0x0000000100b87980 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 3776
+4   chromedriver                        0x0000000100c17234 cxxbridge1$string$len + 526924
+5   chromedriver                        0x0000000100c2a5c4 cxxbridge1$string$len + 605660
+6   chromedriver                        0x0000000100be5374 cxxbridge1$string$len + 322444
+7   chromedriver                        0x0000000100be5fc4 cxxbridge1$string$len + 325596
+8   chromedriver                        0x0000000100f6bd2c cxxbridge1$str$ptr + 1685732
+9   chromedriver                        0x0000000100f70530 cxxbridge1$str$ptr + 1704168
+10  chromedriver                        0x0000000100f50e08 cxxbridge1$str$ptr + 1575360
+11  chromedriver                        0x0000000100f70e00 cxxbridge1$str$ptr + 1706424
+12  chromedriver                        0x0000000100f41f94 cxxbridge1$str$ptr + 1514316
+13  chromedriver                        0x0000000100f8d62c cxxbridge1$str$ptr + 1823204
+14  chromedriver                        0x0000000100f8d7ac cxxbridge1$str$ptr + 1823588
+15  chromedriver                        0x0000000100f9c530 cxxbridge1$str$ptr + 1884392
+16  libsystem_pthread.dylib             0x000000019418f2e4 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000019418a0fc thread_start + 8
+</msg>
 <arg>${home_locator.input_text}</arg>
 <arg>${GLOBAL_TIMOUT}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-09T16:59:15.694256" elapsed="0.223053"/>
+<status status="FAIL" start="2024-10-15T17:02:31.003168" elapsed="9.142098">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.91)
+Stacktrace:
+0   chromedriver                        0x0000000100fa4500 cxxbridge1$str$ptr + 1917112
+1   chromedriver                        0x0000000100f9c890 cxxbridge1$str$ptr + 1885256
+2   chromedriver                        0x0000000100bac538 cxxbridge1$string$len + 89424
+3   chromedriver                        0x0000000100b87980 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 3776
+4   chromedriver                        0x0000000100c17234 cxxbridge1$string$len + 526924
+5   chromedriver                        0x0000000100c2a5c4 cxxbridge1$string$len + 605660
+6   chromedriver                        0x0000000100be5374 cxxbridge1$string$len + 322444
+7   chromedriver                        0x0000000100be5fc4 cxxbridge1$string$len + 325596
+8   chromedriver                        0x0000000100f6bd2c cxxbridge1$str$ptr + 1685732
+9   chromedriver                        0x0000000100f70530 cxxbridge1$str$ptr + 1704168
+10  chromedriver                        0x0000000100f50e08 cxxbridge1$str$ptr + 1575360
+11  chromedriver                        0x0000000100f70e00 cxxbridge1$str$ptr + 1706424
+12  chromedriver                        0x0000000100f41f94 cxxbridge1$str$ptr + 1514316
+13  chromedriver                        0x0000000100f8d62c cxxbridge1$str$ptr + 1823204
+14  chromedriver                        0x0000000100f8d7ac cxxbridge1$str$ptr + 1823588
+15  chromedriver                        0x0000000100f9c530 cxxbridge1$str$ptr + 1884392
+16  libsystem_pthread.dylib             0x000000019418f2e4 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000019418a0fc thread_start + 8
+</status>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:15.917667" level="INFO">Typing text 'phone' into text field 'xpath=//input[@placeholder='input search text']'.</msg>
 <arg>${home_locator.input_text}</arg>
 <arg>${type_product}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:15.917486" elapsed="0.033055"/>
+<status status="NOT RUN" start="2024-10-15T17:02:40.145415" elapsed="0.000018"/>
 </kw>
 <arg>${input_search}</arg>
-<status status="PASS" start="2024-10-09T16:59:15.694123" elapsed="0.256487"/>
+<status status="FAIL" start="2024-10-15T17:02:31.003036" elapsed="9.142477">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.91)
+Stacktrace:
+0   chromedriver                        0x0000000100fa4500 cxxbridge1$str$ptr + 1917112
+1   chromedriver                        0x0000000100f9c890 cxxbridge1$str$ptr + 1885256
+2   chromedriver                        0x0000000100bac538 cxxbridge1$string$len + 89424
+3   chromedriver                        0x0000000100b87980 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 3776
+4   chromedriver                        0x0000000100c17234 cxxbridge1$string$len + 526924
+5   chromedriver                        0x0000000100c2a5c4 cxxbridge1$string$len + 605660
+6   chromedriver                        0x0000000100be5374 cxxbridge1$string$len + 322444
+7   chromedriver                        0x0000000100be5fc4 cxxbridge1$string$len + 325596
+8   chromedriver                        0x0000000100f6bd2c cxxbridge1$str$ptr + 1685732
+9   chromedriver                        0x0000000100f70530 cxxbridge1$str$ptr + 1704168
+10  chromedriver                        0x0000000100f50e08 cxxbridge1$str$ptr + 1575360
+11  chromedriver                        0x0000000100f70e00 cxxbridge1$str$ptr + 1706424
+12  chromedriver                        0x0000000100f41f94 cxxbridge1$str$ptr + 1514316
+13  chromedriver                        0x0000000100f8d62c cxxbridge1$str$ptr + 1823204
+14  chromedriver                        0x0000000100f8d7ac cxxbridge1$str$ptr + 1823588
+15  chromedriver                        0x0000000100f9c530 cxxbridge1$str$ptr + 1884392
+16  libsystem_pthread.dylib             0x000000019418f2e4 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000019418a0fc thread_start + 8
+</status>
 </kw>
-<kw name="Button Search" owner="home_page">
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${home_locator.element_serch}</arg>
-<arg>${GLOBAL_TIMOUT}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-10-09T16:59:15.950919" elapsed="0.004815"/>
+<kw name="Click Search Button" owner="home_page">
+<status status="NOT RUN" start="2024-10-15T17:02:40.145619" elapsed="0.000015"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:15.955940" level="INFO">Clicking element 'xpath=//span[@aria-label="search"]'.</msg>
-<arg>${home_locator.element_serch}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:15.955834" elapsed="0.136200"/>
-</kw>
-<status status="PASS" start="2024-10-09T16:59:15.950734" elapsed="0.141394"/>
-</kw>
-<kw name="Add Product Into Cart" owner="home_page">
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${home_locator.select_product}</arg>
-<arg>${GLOBAL_TIMOUT}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-10-09T16:59:16.092539" elapsed="0.216093"/>
-</kw>
-<kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:16.312887" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="b20905bfca4fe664c51c732dbfb636f6", element="f.6504E4F1BC03601B9D2F8061A6E49A6B.d.9DD40C2A32D30C40D38D74D1200B6F01.e.30")&gt;, &lt;selenium.webdriv...</msg>
-<var>${elements}</var>
-<arg>${home_locator.select_product}</arg>
-<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:16.309005" elapsed="0.003934"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-09T16:59:16.313480" level="INFO">${first_element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="b20905bfca4fe664c51c732dbfb636f6", element="f.6504E4F1BC03601B9D2F8061A6E49A6B.d.9DD40C2A32D30C40D38D74D1200B6F01.e.30")&gt;</msg>
-<var>${first_element}</var>
-<arg>${elements}[0]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-09T16:59:16.313284" elapsed="0.000219"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:16.313898" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="b20905bfca4fe664c51c732dbfb636f6", element="f.6504E4F1BC03601B9D2F8061A6E49A6B.d.9DD40C2A32D30C40D38D74D1200B6F01.e.30")&gt;'.</msg>
-<arg>${first_element}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:16.313615" elapsed="0.018296"/>
-</kw>
-<status status="PASS" start="2024-10-09T16:59:16.092314" elapsed="0.239820"/>
+<kw name="Select Product" owner="home_page">
+<status status="NOT RUN" start="2024-10-15T17:02:40.145701" elapsed="0.000011"/>
 </kw>
 <arg>${search_product.type}</arg>
-<status status="PASS" start="2024-10-09T16:59:15.693645" elapsed="0.638531"/>
+<status status="FAIL" start="2024-10-15T17:02:31.002565" elapsed="9.143192">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.91)
+Stacktrace:
+0   chromedriver                        0x0000000100fa4500 cxxbridge1$str$ptr + 1917112
+1   chromedriver                        0x0000000100f9c890 cxxbridge1$str$ptr + 1885256
+2   chromedriver                        0x0000000100bac538 cxxbridge1$string$len + 89424
+3   chromedriver                        0x0000000100b87980 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 3776
+4   chromedriver                        0x0000000100c17234 cxxbridge1$string$len + 526924
+5   chromedriver                        0x0000000100c2a5c4 cxxbridge1$string$len + 605660
+6   chromedriver                        0x0000000100be5374 cxxbridge1$string$len + 322444
+7   chromedriver                        0x0000000100be5fc4 cxxbridge1$string$len + 325596
+8   chromedriver                        0x0000000100f6bd2c cxxbridge1$str$ptr + 1685732
+9   chromedriver                        0x0000000100f70530 cxxbridge1$str$ptr + 1704168
+10  chromedriver                        0x0000000100f50e08 cxxbridge1$str$ptr + 1575360
+11  chromedriver                        0x0000000100f70e00 cxxbridge1$str$ptr + 1706424
+12  chromedriver                        0x0000000100f41f94 cxxbridge1$str$ptr + 1514316
+13  chromedriver                        0x0000000100f8d62c cxxbridge1$str$ptr + 1823204
+14  chromedriver                        0x0000000100f8d7ac cxxbridge1$str$ptr + 1823588
+15  chromedriver                        0x0000000100f9c530 cxxbridge1$str$ptr + 1884392
+16  libsystem_pthread.dylib             0x000000019418f2e4 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000019418a0fc thread_start + 8
+</status>
 </kw>
 <kw name="Add To Cart" owner="product_detail_feature">
-<kw name="Add To Cart" owner="product_detail_page">
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${product_datail_locator.button_add_to_cart}</arg>
-<arg>${GLOBAL_TIMOUT}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-10-09T16:59:16.332754" elapsed="0.215727"/>
+<status status="NOT RUN" start="2024-10-15T17:02:40.145876" elapsed="0.000013"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:16.548852" level="INFO">Clicking element 'xpath=//button[@type='button']//span[text()='Add to cart']'.</msg>
-<arg>${product_datail_locator.button_add_to_cart}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:16.548672" elapsed="0.024277"/>
-</kw>
-<status status="PASS" start="2024-10-09T16:59:16.332635" elapsed="0.240383"/>
-</kw>
-<kw name="Confirm On Dialog" owner="product_detail_page">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${product_datail_locator.button_Ok}</arg>
-<arg>${GLOBAL_TIMOUT}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-09T16:59:16.573317" elapsed="0.235470"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:16.809331" level="INFO">Clicking element 'xpath=//div[@class="ant-modal-confirm-body-wrapper"]//span[text()='OK']'.</msg>
-<arg>${product_datail_locator.button_Ok}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:16.809068" elapsed="0.027269"/>
-</kw>
-<status status="PASS" start="2024-10-09T16:59:16.573149" elapsed="0.263259"/>
-</kw>
-<status status="PASS" start="2024-10-09T16:59:16.332416" elapsed="0.504048"/>
-</kw>
-<kw name="Pay method" owner="delivery_info_feature">
-<kw name="Input Fill Delivery info field" owner="delivery_info_page">
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${delivery_locator.Icon_cart}</arg>
-<arg>${GLOBAL_TIMOUT}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-10-09T16:59:16.838260" elapsed="0.005987"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:16.844506" level="INFO">Clicking element 'xpath=//span[@aria-label="shopping-cart"]'.</msg>
-<arg>${delivery_locator.Icon_cart}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:16.844381" elapsed="0.287981"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${delivery_locator.load_data}</arg>
-<arg>${GLOBAL_TIMOUT}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.132612" elapsed="0.239872"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:17.372839" level="INFO">Typing text 'Khongkhunanat' into text field 'xpath=//input[@id="form_item_name"]'.</msg>
-<arg>${delivery_locator.name}</arg>
-<arg>${name}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.372657" elapsed="0.047730"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${delivery_locator.surname}</arg>
-<arg>${GLOBAL_TIMOUT}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.420537" elapsed="0.008480"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:17.429232" level="INFO">Typing text 'Phitacknaralert' into text field 'xpath=//input[@id="form_item_surName"]'.</msg>
-<arg>${delivery_locator.surname}</arg>
-<arg>${surname}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.429120" elapsed="0.040529"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${delivery_locator.address}</arg>
-<arg>${GLOBAL_TIMOUT}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.469796" elapsed="0.008154"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:17.478150" level="INFO">Typing text 'R.Bangbon' into text field 'xpath=//input[@id="form_item_address"]'.</msg>
-<arg>${delivery_locator.address}</arg>
-<arg>${address}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.478046" elapsed="0.034270"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${delivery_locator.phone}</arg>
-<arg>${GLOBAL_TIMOUT}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.512440" elapsed="0.009362"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:17.522025" level="INFO">Typing text '0960345643' into text field 'xpath=//input[@id="form_item_phone"]'.</msg>
-<arg>${delivery_locator.phone}</arg>
-<arg>${telephone}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.521910" elapsed="0.036987"/>
-</kw>
-<arg>${name}</arg>
-<arg>${surname}</arg>
-<arg>${address}</arg>
-<arg>${telephone}</arg>
-<status status="PASS" start="2024-10-09T16:59:16.838051" elapsed="0.720911"/>
-</kw>
-<kw name="Button Pay" owner="delivery_info_page">
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${delivery_locator.pay_button}</arg>
-<arg>${GLOBAL_TIMOUT}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.559219" elapsed="0.005006"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:17.564475" level="INFO">Clicking element 'xpath=//button[@type="button"]//span[text()='PAY']'.</msg>
-<arg>${delivery_locator.pay_button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.564360" elapsed="0.030798"/>
-</kw>
-<status status="PASS" start="2024-10-09T16:59:17.559083" elapsed="0.036140"/>
-</kw>
+<kw name="Input Fill Delivery info field" owner="delivery_info_feature">
 <arg>${profile.name}</arg>
 <arg>${profile.surname}</arg>
 <arg>${profile.address}</arg>
 <arg>${profile.telephone}</arg>
-<status status="PASS" start="2024-10-09T16:59:16.836644" elapsed="0.758604"/>
+<status status="NOT RUN" start="2024-10-15T17:02:40.146102" elapsed="0.000023"/>
 </kw>
-<kw name="Select Method" owner="payment_select_feature">
-<kw name="Select Payment Method" owner="payment_select_page">
-<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
-<arg>${payment_select_locator.credit_card}</arg>
-<arg>${GLOBAL_TIMOUT}</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.595662" elapsed="0.010171"/>
+<kw name="Select Method For Payment" owner="payment_select_feature">
+<status status="NOT RUN" start="2024-10-15T17:02:40.146279" elapsed="0.000014"/>
 </kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:17.606031" level="INFO">Clicking button 'xpath=//input[@value='creditCard']'.</msg>
-<arg>${payment_select_locator.credit_card}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.605933" elapsed="0.018498"/>
-</kw>
-<status status="PASS" start="2024-10-09T16:59:17.595567" elapsed="0.028916"/>
-</kw>
-<kw name="Button Next" owner="payment_select_page">
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${payment_select_locator.button_next}</arg>
-<arg>${GLOBAL_TIMOUT}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.624706" elapsed="0.004082"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:17.628942" level="INFO">Clicking element 'xpath=//button[@type='button']/span[text()='Next']'.</msg>
-<arg>${payment_select_locator.button_next}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.628865" elapsed="0.036194"/>
-</kw>
-<status status="PASS" start="2024-10-09T16:59:17.624582" elapsed="0.040759"/>
-</kw>
-<status status="PASS" start="2024-10-09T16:59:17.595416" elapsed="0.069959"/>
-</kw>
-<kw name="Payment Credit" owner="payment_credit_feature">
-<kw name="Input credit card" owner="payment_credit_page">
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${payment_credit_locator.input_number}</arg>
-<arg>${GLOBAL_TIMOUT}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.667861" elapsed="0.005021"/>
-</kw>
-<kw name="Remove String" owner="String">
-<msg time="2024-10-09T16:59:17.673099" level="INFO">${CardNumberNoSpace} = 4111111111111111</msg>
-<var>${CardNumberNoSpace}</var>
-<arg>${CardNumber}</arg>
-<arg>${SPACE}</arg>
-<doc>Removes all ``removables`` from the given ``string``.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.672993" elapsed="0.000119"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:17.673267" level="INFO">Typing text '4111111111111111' into text field 'xpath=//input[@id='basic_bin']'.</msg>
-<arg>${payment_credit_locator.input_number}</arg>
-<arg>${CardNumberNoSpace}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.673182" elapsed="0.042330"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${payment_credit_locator.input_exp}</arg>
-<arg>${GLOBAL_TIMOUT}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.715641" elapsed="0.004485"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:17.720305" level="INFO">Typing text '14/2025' into text field 'xpath=//input[@id="basic_exp"]'.</msg>
-<arg>${payment_credit_locator.input_exp}</arg>
-<arg>${EXP}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.720211" elapsed="0.032344"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${payment_credit_locator.input_cvc}</arg>
-<arg>${GLOBAL_TIMOUT}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.752681" elapsed="0.004706"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:17.757595" level="INFO">Typing text '234' into text field 'xpath=//input[@id="basic_cvc"]'.</msg>
-<arg>${payment_credit_locator.input_cvc}</arg>
-<arg>${CVC}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.757485" elapsed="0.027900"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${payment_credit_locator.input_basic_owner}</arg>
-<arg>${GLOBAL_TIMOUT}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.785506" elapsed="0.005236"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:17.790943" level="INFO">Typing text 'kongkunanat' into text field 'xpath=//input[@id="basic_owner"]'.</msg>
-<arg>${payment_credit_locator.input_basic_owner}</arg>
-<arg>${CardOwner}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.790839" elapsed="0.036412"/>
-</kw>
-<arg>${card_number}</arg>
-<arg>${EXP}</arg>
-<arg>${CVC}</arg>
-<arg>${CardOwner}</arg>
-<status status="PASS" start="2024-10-09T16:59:17.667705" elapsed="0.159622"/>
-</kw>
-<kw name="Button Confirm" owner="payment_credit_page">
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${payment_credit_locator.confirm_button}</arg>
-<arg>${GLOBAL_TIMOUT}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.827592" elapsed="0.004620"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:17.832421" level="INFO">Clicking element 'xpath=//button[@type='submit']//span[text()='Confirm Payment']'.</msg>
-<arg>${payment_credit_locator.confirm_button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.832320" elapsed="0.019305"/>
-</kw>
-<status status="PASS" start="2024-10-09T16:59:17.827459" elapsed="0.024222"/>
-</kw>
-<kw name="Button Ok" owner="payment_credit_page">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${payment_credit_locator.button_ok}</arg>
-<arg>${GLOBAL_TIMOUT}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-09T16:59:17.851905" elapsed="0.222424"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:18.074863" level="INFO">Clicking element 'xpath=//div[@class="ant-modal-confirm-body-wrapper"]//span[text()='OK']'.</msg>
-<arg>${payment_credit_locator.button_ok}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:18.074599" elapsed="0.029622"/>
-</kw>
-<status status="PASS" start="2024-10-09T16:59:17.851780" elapsed="0.252518"/>
-</kw>
+<kw name="Input Credit And Card Info And Make Payment" owner="payment_credit_feature">
 <arg>${credit_card.card_number}</arg>
 <arg>${credit_card.EXP}</arg>
 <arg>${credit_card.CVC}</arg>
 <arg>${credit_card.CardOwner}</arg>
-<status status="PASS" start="2024-10-09T16:59:17.665662" elapsed="0.438669"/>
+<status status="NOT RUN" start="2024-10-15T17:02:40.146396" elapsed="0.000014"/>
 </kw>
-<kw name="Click Icon For Register Or Login" owner="home_page">
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${home_locator.Icon_for_register_or_login}</arg>
-<arg>${GLOBAL_TIMOUT}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-10-09T16:59:18.104699" elapsed="0.003591"/>
+<kw name="Click Icon User" owner="home_page">
+<status status="NOT RUN" start="2024-10-15T17:02:40.146707" elapsed="0.000014"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-09T16:59:18.108508" level="INFO">Clicking element 'xpath=//ul[@role='menu']//span[@aria-label="user"]'.</msg>
-<arg>${home_locator.Icon_for_register_or_login}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-09T16:59:18.108398" elapsed="0.252092"/>
-</kw>
-<status status="PASS" start="2024-10-09T16:59:18.104520" elapsed="0.256055"/>
-</kw>
-<kw name="The order should be created checked" owner="account_page">
-<kw name="Run Keyword And Return Status" owner="BuiltIn">
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${account_locator.find_table}</arg>
-<arg>${GLOBAL_TIMOUT}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-10-09T16:59:18.361139" elapsed="0.423421"/>
-</kw>
-<msg time="2024-10-09T16:59:18.784686" level="INFO">${result} = True</msg>
-<var>${result}</var>
-<arg>Wait Until Page Contains Element</arg>
-<arg>${account_locator.find_table}</arg>
-<arg>${GLOBAL_TIMOUT}</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2024-10-09T16:59:18.361005" elapsed="0.423700"/>
-</kw>
-<kw name="Run Keyword If" owner="BuiltIn">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>The order</arg>
-<arg>should be created</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-10-09T16:59:18.785138" elapsed="0.000132"/>
-</kw>
-<arg>${result}</arg>
-<arg>Log To Console</arg>
-<arg>The order</arg>
-<arg>should be created</arg>
-<arg>ELSE</arg>
-<arg>Log To Console</arg>
-<arg>The order</arg>
-<arg>not should be created</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-10-09T16:59:18.784928" elapsed="0.000384"/>
-</kw>
-<status status="PASS" start="2024-10-09T16:59:18.360780" elapsed="0.424586"/>
+<kw name="Checked is order should be created" owner="account_page">
+<status status="NOT RUN" start="2024-10-15T17:02:40.146999" elapsed="0.000012"/>
 </kw>
 <kw name="Close all browser" owner="common" type="TEARDOWN">
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-10-09T16:59:18.785788" elapsed="0.070521"/>
+<status status="PASS" start="2024-10-15T17:02:40.147426" elapsed="0.080535"/>
 </kw>
-<status status="PASS" start="2024-10-09T16:59:18.785599" elapsed="0.070780"/>
+<status status="PASS" start="2024-10-15T17:02:40.147265" elapsed="0.080762"/>
 </kw>
-<status status="PASS" start="2024-10-09T16:59:12.864570" elapsed="5.991883"/>
+<status status="FAIL" start="2024-10-15T17:02:28.660620" elapsed="11.567471">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.91)
+Stacktrace:
+0   chromedriver                        0x0000000100fa4500 cxxbridge1$str$ptr + 1917112
+1   chromedriver                        0x0000000100f9c890 cxxbridge1$str$ptr + 1885256
+2   chromedriver                        0x0000000100bac538 cxxbridge1$string$len + 89424
+3   chromedriver                        0x0000000100b87980 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 3776
+4   chromedriver                        0x0000000100c17234 cxxbridge1$string$len + 526924
+5   chromedriver                        0x0000000100c2a5c4 cxxbridge1$string$len + 605660
+6   chromedriver                        0x0000000100be5374 cxxbridge1$string$len + 322444
+7   chromedriver                        0x0000000100be5fc4 cxxbridge1$string$len + 325596
+8   chromedriver                        0x0000000100f6bd2c cxxbridge1$str$ptr + 1685732
+9   chromedriver                        0x0000000100f70530 cxxbridge1$str$ptr + 1704168
+10  chromedriver                        0x0000000100f50e08 cxxbridge1$str$ptr + 1575360
+11  chromedriver                        0x0000000100f70e00 cxxbridge1$str$ptr + 1706424
+12  chromedriver                        0x0000000100f41f94 cxxbridge1$str$ptr + 1514316
+13  chromedriver                        0x0000000100f8d62c cxxbridge1$str$ptr + 1823204
+14  chromedriver                        0x0000000100f8d7ac cxxbridge1$str$ptr + 1823588
+15  chromedriver                        0x0000000100f9c530 cxxbridge1$str$ptr + 1884392
+16  libsystem_pthread.dylib             0x000000019418f2e4 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000019418a0fc thread_start + 8
+</status>
 </test>
-<status status="PASS" start="2024-10-09T16:59:12.777330" elapsed="6.079419"/>
+<status status="FAIL" start="2024-10-15T17:02:28.574498" elapsed="11.653988"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Test-Cases">Test-Cases</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test-Cases">Test-Cases</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2024-10-15T17:02:40.136638" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.91)
+Stacktrace:
+0   chromedriver                        0x0000000100fa4500 cxxbridge1$str$ptr + 1917112
+1   chromedriver                        0x0000000100f9c890 cxxbridge1$str$ptr + 1885256
+2   chromedriver                        0x0000000100bac538 cxxbridge1$string$len + 89424
+3   chromedriver                        0x0000000100b87980 core::str::slice_error_fail::hbaf5d05fe3921cd2 + 3776
+4   chromedriver                        0x0000000100c17234 cxxbridge1$string$len + 526924
+5   chromedriver                        0x0000000100c2a5c4 cxxbridge1$string$len + 605660
+6   chromedriver                        0x0000000100be5374 cxxbridge1$string$len + 322444
+7   chromedriver                        0x0000000100be5fc4 cxxbridge1$string$len + 325596
+8   chromedriver                        0x0000000100f6bd2c cxxbridge1$str$ptr + 1685732
+9   chromedriver                        0x0000000100f70530 cxxbridge1$str$ptr + 1704168
+10  chromedriver                        0x0000000100f50e08 cxxbridge1$str$ptr + 1575360
+11  chromedriver                        0x0000000100f70e00 cxxbridge1$str$ptr + 1706424
+12  chromedriver                        0x0000000100f41f94 cxxbridge1$str$ptr + 1514316
+13  chromedriver                        0x0000000100f8d62c cxxbridge1$str$ptr + 1823204
+14  chromedriver                        0x0000000100f8d7ac cxxbridge1$str$ptr + 1823588
+15  chromedriver                        0x0000000100f9c530 cxxbridge1$str$ptr + 1884392
+16  libsystem_pthread.dylib             0x000000019418f2e4 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000019418a0fc thread_start + 8
+</msg>
 </errors>
 </robot>

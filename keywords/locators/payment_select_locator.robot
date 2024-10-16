@@ -1,7 +1,7 @@
 *** Variables ***
 
 #select method
-${payment_select_locator.credit_card}        xpath=//input[@value='creditCard']
+${payment_select_locator.select_credit_card}        xpath=//input[@value='creditCard']
 
 
 #button next

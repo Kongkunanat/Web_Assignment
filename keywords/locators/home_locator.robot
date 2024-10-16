@@ -1,6 +1,6 @@
 *** Variables ***
 #Icon for login or register
-${home_locator.Icon_for_register_or_login}        xpath=//ul[@role='menu']//span[@aria-label="user"]
+${home_locator.user_icon}        xpath=//ul[@role='menu']//span[@aria-label="user"]
 
 
 #Input search bar

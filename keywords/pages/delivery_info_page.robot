@@ -23,7 +23,7 @@ Input Fill Delivery info field
     SeleniumLibrary.Input Text    ${delivery_locator.phone}    ${telephone}
 
 
-Button Pay
+Click Pay Button
     SeleniumLibrary.Wait Until Page Contains Element    ${delivery_locator.pay_button}      ${GLOBAL_TIMOUT}
     SeleniumLibrary.Click Element    ${delivery_locator.pay_button}  
 

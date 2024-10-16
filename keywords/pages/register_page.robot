@@ -11,12 +11,12 @@ Input Data For Sign Up
     SeleniumLibrary.Input Text    ${register_locator.confirm_password}       ${password_confirm}  
 
 
-ฺButton Sign Up
+ฺClick Sign Up Button 
     SeleniumLibrary.Click Button     ${register_locator.button_signup} 
 
 
 
-Button Ok
+Click Ok Button 
     SeleniumLibrary.Wait Until Element Is Enabled    ${register_locator.button_Ok}      ${GLOBAL_TIMOUT}
     SeleniumLibrary.Click Button     ${register_locator.button_Ok} 
 

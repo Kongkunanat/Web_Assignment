@@ -20,7 +20,7 @@ Input credit card
     SeleniumLibrary.Input Text      ${payment_credit_locator.input_basic_owner}      ${CardOwner}
 
 
-Button Confirm
+Click Confirm Button 
     SeleniumLibrary.Wait Until Page Contains Element     ${payment_credit_locator.confirm_button}  ${GLOBAL_TIMOUT}
     SeleniumLibrary.Click Element    ${payment_credit_locator.confirm_button} 
 
